@@ -26,6 +26,6 @@ appVersion: "1.16.0"
 dependencies:
   - name: cluster-azure-chart
     alias: azure
-    version: 0.1.0
+    version: 0.1.1
     repository: https://nprokopic.github.io/helm-playground/charts
     condition: azure.enabled
