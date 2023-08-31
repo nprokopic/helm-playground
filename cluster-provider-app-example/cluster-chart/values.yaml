@@ -1,0 +1,6 @@
+global:
+  metadata:
+    name: GLOBAL-PLACEHOLDER
+
+metadata:
+  name: LOCAL-PLACEHOLDER
