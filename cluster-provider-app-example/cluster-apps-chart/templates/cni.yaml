@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: SomeApp
+metadata:
+  name: {{ include "cluster.name" . }}-cni-app
+  labels:
+    {{- include "cluster.labels" . | nindent 4 }}
+    {{- include "cluster-apps-chart.labels" . | nindent 4 }}
+  annotations:
+    global-metadata-name: {{ .Values.global.metadata.name }}
+    local-metadata-name: {{ .Values.metadata.name }}
+spec:
+  version: {{ .Values.apps.cni.version }}

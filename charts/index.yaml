@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  cluster-apps-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-08-31T16:07:08.747571988+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 3096d14d2aa8fd331278d7ee17d296a5965ad8afb5362cc8545d134319b17a87
+    name: cluster-apps-chart
+    type: application
+    urls:
+    - https://nprokopic.github.io/helm-playground/charts/cluster-apps-chart-0.1.0.tgz
+    version: 0.1.0
   cluster-azure-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T15:45:58.00216971+02:00"
+    created: "2023-08-31T16:07:08.747886245+02:00"
     description: A Helm chart for Kubernetes
     digest: af11f738f75287e95246ebf945e62868bf37eab5ddede893f42e951a4696b2ff
     name: cluster-azure-chart
@@ -13,7 +24,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T15:45:58.002012597+02:00"
+    created: "2023-08-31T16:07:08.747745402+02:00"
     description: A Helm chart for Kubernetes
     digest: 0405b8583aec47135a1d4f3f20281f30a31e17b48b211f1dd7043b4c609e4acc
     name: cluster-azure-chart
@@ -24,7 +35,7 @@ entries:
   cluster-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T15:45:58.002673629+02:00"
+    created: "2023-08-31T16:07:08.748348021+02:00"
     description: A Helm chart for Kubernetes
     digest: e9af67a68238a182c88a47acbe32098120dbc1f465bea1d9f48dda094f3bda15
     name: cluster-chart
@@ -34,7 +45,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T15:45:58.002504644+02:00"
+    created: "2023-08-31T16:07:08.748200966+02:00"
     description: A Helm chart for Kubernetes
     digest: 88cf6d55c3c5fd810fb16368d38f3fdb4a02d5df70d28b78eb4f19f058af4458
     name: cluster-chart
@@ -44,7 +55,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T15:45:58.002328976+02:00"
+    created: "2023-08-31T16:07:08.748034089+02:00"
     description: A Helm chart for Kubernetes
     digest: fa0bc4b21e59ea25e1b4b2029281f193be1ffa79f76daf8401a9c2ef876f42db
     name: cluster-chart
@@ -52,4 +63,4 @@ entries:
     urls:
     - https://nprokopic.github.io/helm-playground/charts/cluster-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-31T15:45:58.001729414+02:00"
+generated: "2023-08-31T16:07:08.747264474+02:00"

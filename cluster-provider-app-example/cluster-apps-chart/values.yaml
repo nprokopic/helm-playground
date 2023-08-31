@@ -1,0 +1,12 @@
+global:
+  metadata:
+    name: APPS-GLOBAL-PLACEHOLDER
+
+metadata:
+  name: APPS-LOCAL-PLACEHOLDER
+
+apps:
+  cni:
+    version: v2.0.0
+  csi:
+    version: v1.0.0
