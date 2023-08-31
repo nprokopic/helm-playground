@@ -1,6 +1,10 @@
 global:
-  metadata:
+  metadata1:
     name: GLOBAL-PLACEHOLDER
 
-metadata:
+exports:
+  metadata2:
+    name: EXPORTED-PLACEHOLDER
+
+metadata3:
   name: LOCAL-PLACEHOLDER
