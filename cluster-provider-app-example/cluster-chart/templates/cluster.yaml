@@ -5,9 +5,8 @@ metadata:
   labels:
     {{- include "cluster.labels" . | nindent 4 }}
   annotations:
-    global-name: {{ .Values.global.metadata1.name }}
-    exported-name: {{ .Values.exports.metadata2.name }}
-    local-name: {{ .Values.metadata3.name }}
+    global-metadata-name: {{ .Values.global.metadata.name }}
+    local-metadata-name: {{ .Values.metadata.name }}
 spec:
   controlPlaneEndpoint:
     host: apiserver

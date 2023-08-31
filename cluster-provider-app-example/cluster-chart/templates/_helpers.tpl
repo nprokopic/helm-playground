@@ -2,7 +2,7 @@
 Expand the name of the chart.
 */}}
 {{- define "cluster.name" -}}
-{{- default .Values.global.metadata1.name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
+{{- default .Values.global.metadata.name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
