@@ -1,0 +1,6 @@
+dependencies:
+- name: cluster-apps-chart
+  repository: https://nprokopic.github.io/helm-playground/charts
+  version: 0.1.0
+digest: sha256:c3954b879fef15ad70e216fe559849086aa52e2cec3e9a79d39e834d2e866dba
+generated: "2023-08-31T16:11:09.482929342+02:00"

@@ -4,3 +4,10 @@ global:
 
 metadata:
   name: LOCAL-PLACEHOLDER
+
+apps:
+  apps:
+    cni:
+      version: v5.0.0
+    csi:
+      version: v6.0.0
