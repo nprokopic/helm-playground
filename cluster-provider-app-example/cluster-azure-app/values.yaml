@@ -1,0 +1,9 @@
+location: westeurope
+disk:
+  size: 50g
+
+cluster:
+  apps:
+    apps:
+      csi:
+        version: v10.0.0

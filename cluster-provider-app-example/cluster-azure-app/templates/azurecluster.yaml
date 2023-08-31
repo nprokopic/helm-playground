@@ -1,0 +1,13 @@
+apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+kind: AzureCluster
+metadata:
+  name: {{ include "cluster.name" . }}
+  labels:
+    {{- include "cluster.labels" . | nindent 4 }}
+    {{- include "cluster-azure-app.labels" . | nindent 4 }}
+  annotations:
+    global-metadata-name: {{ .Values.global.metadata.name }}
+    cluster-local-metadata-name: {{ .Values.cluster.metadata.name }}
+spec:
+  location: {{ .Values.location }}
+  resourceGroup: {{ include "cluster.name" . }}
