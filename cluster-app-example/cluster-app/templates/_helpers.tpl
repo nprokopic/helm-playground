@@ -1,23 +1,23 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "cluster-azure-chart.name" -}}
-{{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
+{{- define "cluster.name" -}}
+{{- default .Values.global.metadata.name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "cluster-azure-chart.chart" -}}
+{{- define "cluster.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "cluster-azure-chart.labels" -}}
-helm.sh/chart: {{ include "cluster-azure-chart.chart" . }}
-{{ include "cluster-azure-chart.selectorLabels" . }}
+{{- define "cluster.labels" -}}
+helm.sh/chart: {{ include "cluster.chart" . }}
+{{ include "cluster.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -27,7 +27,7 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "cluster-azure-chart.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "cluster-azure-chart.name" . }}
+{{- define "cluster.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "cluster.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}

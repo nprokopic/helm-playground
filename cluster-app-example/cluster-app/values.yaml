@@ -1,0 +1,6 @@
+global:
+  metadata:
+    name: PLACEHOLDER
+
+azure:
+  enabled: false

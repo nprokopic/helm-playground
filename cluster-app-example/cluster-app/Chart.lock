@@ -1,0 +1,6 @@
+dependencies:
+- name: cluster-azure-chart
+  repository: https://nprokopic.github.io/helm-playground/charts
+  version: 0.1.0
+digest: sha256:082dcefa4157ed152c31c2ea0aed4de05e6a72b6a0c2b8147b746c4762b99a60
+generated: "2023-08-31T12:26:36.790692532+02:00"
